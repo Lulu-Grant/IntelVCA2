@@ -38,7 +38,6 @@ It focuses on:
 
 - [文档总览](./docs/00-文档导航.md)
 - [快速开始](./docs/08-快速开始.md)
-- [官方驱动与依赖文件索引](./docs/09-官方驱动与依赖文件索引.md)
 - [VCA2 概览与硬件结构](./docs/01-VCA2概览与硬件结构.md)
 - [兼容性、前置条件与准备清单](./docs/02-兼容性与准备清单.md)
 - [宿主机部署指南](./docs/03-宿主机部署指南.md)
@@ -51,7 +50,6 @@ It focuses on:
 
 - [English Documentation Guide](./docs/README.en.md)
 - [English Quick Start](./docs/QUICKSTART.en.md)
-- [Official Driver and Dependency Index](./docs/DRIVER-INDEX.en.md)
 
 ## What This Repository Covers
 
@@ -125,17 +123,82 @@ For the following items, always defer to the official driver and image package:
 
 结合现有资料背景，这个资料库保存了完整官方驱动、镜像和相关资料；本仓库则负责把使用思路整理清楚。
 
-重点文件、目录型驱动包、代表性文件名和快捷下载链接见：
-
-- [官方驱动与依赖文件索引](./docs/09-官方驱动与依赖文件索引.md)
-
 ### English
 
 The linked Mega folder is understood as the **complete official driver, image, and related materials package**, while this repository serves as the structured public-facing documentation layer.
 
-For highlighted packages, representative filenames, and quick links, see:
+The highlighted package index is embedded directly below in this README.
 
-- [Official Driver and Dependency Index](./docs/DRIVER-INDEX.en.md)
+## 官方驱动与依赖文件索引
+
+这部分直接展示 **Intel VCA2 官方资料包** 里最值得优先关注的驱动、镜像、依赖和工具文件，方便在 GitHub 首页直接查找。
+
+以下快捷链接基于公开资料目录在 `2026-04-19` 的可见内容生成。文件作用说明主要依据官方文件名、目录结构和包名归纳；真正执行安装、挂载、刷写或镜像制作时，仍应以包内说明文档和脚本为准。
+
+### 宿主机驱动与开发相关包
+
+| 文件 | 简短说明 | 快捷下载 |
+| --- | --- | --- |
+| `intelvisualcomputeaccelerator_host_ubuntu_16.04.3_k4.14.20_2.3.26.zip` | Ubuntu 宿主机驱动与管理工具包，适合 Ubuntu 16.04.3 路线。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/eZlRhaSR) |
+| `intelvisualcomputeaccelerator_host_centos_7.4_k4.14.20_2.3.26.zip` | CentOS 宿主机驱动与管理工具包，适合 CentOS 7.4 路线。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/eA9hHQ4b) |
+| `intelvisualcomputeaccelerator_host_debian_8.7_k4.14.20_2.3.26.zip` | Debian 宿主机驱动与管理工具包，适合 Debian 8.7 路线。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/GJljSCbK) |
+| `intelvisualcomputeaccelerator_kernels_development_package_2.3.26.zip` | 内核开发相关包，适合需要编译或适配内核模块的场景。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/XF8hiIqL) |
+| `intelvisualcomputeaccelerator_build_scripts_2.3.26.zip` | 构建脚本集合，适合配合开发包和源码包一起查看。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/fI9hlYjY) |
+| `intelvisualcomputeaccelerator_sources_2.3.26.zip` | 源码包，适合做二次研究、脚本考证和版本比对。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/2Qs1yAjC) |
+| `intelvisualcomputeaccelerator_bios_2.3.26.zip` | VCA2 固件相关 BIOS 包。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/KEtTRajQ) |
+| `intelvisualcomputeaccelerator_eeprom_2.3.26.zip` | EEPROM 相关小包，通常与底层固件维护有关。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/jMtnmYYY) |
+
+### Node 镜像与启动模式相关包
+
+| 文件 | 简短说明 | 快捷下载 |
+| --- | --- | --- |
+| `intelvisualcomputeaccelerator_persistent_reference_ubuntu_16.04.3_2.3.26.zip` | Ubuntu 持久化参考镜像，适合 BlockIO 长期保留环境。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/6N0BmIxY) |
+| `intelvisualcomputeaccelerator_volatile_reference_ubuntu_16.04.3_2.3.26.zip` | Ubuntu 易失性参考镜像，适合 RAMDisk 或临时测试。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/LNtzlaLB) |
+| `intelvisualcomputeaccelerator_persistent_reference_centos_7.4_k4.14.20_2.3.26.zip` | CentOS 持久化参考镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/TBsllKjb) |
+| `intelvisualcomputeaccelerator_volatile_reference_centos_7.4_k4.14.20_2.3.26.zip` | CentOS 易失性参考镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/SZ8RgYLa) |
+| `intelvisualcomputeaccelerator_persistent_production_centos_7.4_2.1.292.zip` | CentOS 持久化生产镜像，适合看官方生产化路线。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/DcsxTKRA) |
+| `intelvisualcomputeaccelerator_volatile_kvm_production_centos_7.4_2.2.29.zip` | 面向 KVM 的易失性生产镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/XAszWKTI) |
+| `intelvisualcomputeaccelerator_volatile_kvmgt_ubuntu_16.04.3_2.2.29.zip` | Ubuntu 路线下与 KVMGT 相关的易失性镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/mRt1lSCZ) |
+| `intelvisualcomputeaccelerator_windows_image_creation_package_2.3.26.zip` | Windows 节点镜像制作包，是 Windows 路线最关键的入口之一。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/eQ9xzYCR) |
+
+### Windows 镜像制作与配套依赖
+
+| 文件 | 简短说明 | 快捷下载 |
+| --- | --- | --- |
+| `win64_15.45.5174.zip` | Intel 图形驱动压缩包，常作为 Windows 节点图形驱动依赖。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/yF9zmSRY) |
+| `adksetup.exe` | Windows ADK 安装程序，制作 Windows 镜像时常见依赖。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/fA0DBAYb) |
+| `VirtualBox-7.0.14-161095-Win.exe` | Windows 镜像制作流程里配套使用的虚拟化工具。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/zQ9jiSAb) |
+| `tightvnc-2.8.81-gpl-setup-64bit.msi` | 制作或调试 Windows 镜像时常见的远程桌面辅助工具。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/jNsDUQpQ) |
+| `cn_windows_10_business_editions_version_1809_updated_sept_2019_x64_dvd_f873d037.iso` | Windows 10 企业版系安装镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/WM8hFaqD) |
+| `cn_windows_server_2016_vl_x64_dvd_11636695.iso` | Windows Server 2016 安装镜像。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/uZ0HUKZL) |
+| `vca_create_windows_image.ps1` | Windows 镜像创建 PowerShell 脚本。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/3RlFSaSR) |
+| `vca_create_windows_image.txt` | Windows 镜像创建说明文本。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/GNsjXKzC) |
+
+### 目录型驱动与工具入口
+
+| 目录 | 代表性文件名 | 简短说明 | 快捷入口 |
+| --- | --- | --- | --- |
+| `GFX_driver` | `Setup.exe`, `Graphics/igdlh64.inf`, `Graphics/IntelOpenCL64.dll` | Windows 图形驱动完整目录，适合直接浏览驱动安装器、INF 与 OpenCL 相关文件。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/bVkBhayL) |
+| `VCA_Windows_drivers` | `Vca.inf`, `Vca.sys`, `VcaBlockIo.inf`, `VcaVeth.inf` | VCA 相关 Windows 驱动目录，包含主驱动、BlockIO 与虚拟网卡驱动。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/DFsTSSTL) |
+| `Xen` | `xenbus.inf`, `xennet.inf`, `xenvif.inf` | Xen 总线与网络相关驱动目录。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/HN9DkQSZ) |
+| `answer_files` | `WIN10/AutoUnattend.xml`, `WS2016/AutoUnattend.xml` | 无人值守安装应答文件目录，适合制作 Windows 镜像时配套使用。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/OFkjBQYT) |
+| `VcaKmdWin` | `Win8.1Release-64/Vca Package/Vca.inf` | 另一套 Windows 驱动目录，适合与 `VCA_Windows_drivers` 对照查看。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/iV8zGKiZ) |
+| `VCAgent` | `VCAgent.exe`, `VCAgent.exe.config` | VCA Agent 相关程序目录。 | [打开目录](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/XItBUSQJ) |
+
+### 官方 PDF 文档
+
+| 文件 | 简短说明 | 快捷下载 |
+| --- | --- | --- |
+| `VCA_SoftwareUserGuide.pdf` | 软件使用说明书。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/XJ9h0CIR) |
+| `VCA2_HW_User_Guide.pdf` | 硬件用户手册。 | [下载](https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw/folder/CI0DUaoY/file/ectlVA4J) |
+
+### 建议优先下载顺序
+
+1. 先下载与宿主机系统对应的 `host` 包。
+2. 再下载一套 `persistent_reference` 或 `volatile_reference` 镜像。
+3. 如果目标包含 Windows 节点，再补 `windows_image_creation_package` 与 `vca_create_windows_image` 相关文件。
+4. 根据镜像制作流程补 `GFX_driver`、`VCA_Windows_drivers`、`Xen`、`answer_files`。
+5. 只有在需要做源码考证、脚本核对或内核适配时，再下载 `sources`、`kernels_development_package` 和 `build_scripts`。
 
 ## Suggested Reading Order
 

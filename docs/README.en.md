@@ -8,7 +8,7 @@ The full technical documentation set is currently written in Chinese, because th
 
 1. [English Quick Start](./QUICKSTART.en.md)
 2. [Chinese Documentation Guide](./00-文档导航.md)
-3. [Official Driver and Dependency Index](./DRIVER-INDEX.en.md)
+3. [Repository README package index](../README.md)
 4. [VCA2 Overview and Hardware Structure](./01-VCA2概览与硬件结构.md)
 5. [Compatibility and Preparation Checklist](./02-兼容性与准备清单.md)
 6. [Host Deployment Guide](./03-宿主机部署指南.md)
@@ -65,7 +65,7 @@ The full technical documentation set is currently written in Chinese, because th
 - how to use this documentation correctly
 - why exact commands should still come from the official package
 
-## `DRIVER-INDEX.en.md`
+## Repository README package index
 
 - which files in the official Mega package matter most
 - how host packages, images, and dependencies are separated
