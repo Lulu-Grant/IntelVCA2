@@ -2,20 +2,20 @@
 
 This quick start is for readers who want the shortest possible path before working with the full official driver and image package.
 
-## 1. Decide Whether Intel VCA2 Is Right for You
+## 1. Decide Whether Intel VCA2 Is the Right Fit
 
-You are a good fit if:
+Good-fit scenarios include:
 
-- you already own Intel VCA2 or are about to buy one
-- you have access to a server or workstation platform
-- you accept legacy OS requirements
-- you are interested in experimentation, documentation, or niche enterprise hardware
+- already owning Intel VCA2 or planning to buy one
+- having access to a server or workstation platform
+- accepting legacy OS requirements
+- being interested in experimentation, documentation, or niche enterprise hardware
 
-You are probably **not** a good fit if:
+Less suitable scenarios include:
 
-- you just want an easy modern transcoding card
-- you want low power, low noise, and minimal maintenance
-- you do not want to touch legacy Linux environments
+- only needing an easy modern transcoding card
+- prioritizing low power, low noise, and minimal maintenance
+- wanting to avoid legacy Linux environments
 
 ## 2. The Four Most Important Facts
 
@@ -37,7 +37,7 @@ The most commonly referenced working route in the collected materials is:
 
 ### 2.3 Official package first
 
-Before doing anything serious, make sure you have:
+Before doing anything serious, the following should be available:
 
 - the host OS installer
 - the complete official driver package
@@ -75,7 +75,7 @@ not as:
 
 ## 5. Best Practical Advice
 
-If you want a stable long-term setup:
+For a more stable long-term setup:
 
 - keep the host focused on VCA2
 - keep node roles clear

@@ -55,7 +55,7 @@ It focuses on:
 
 ### 中文
 
-这套文档主要帮助你回答这些问题：
+这套文档主要帮助读者回答这些问题：
 
 - VCA2 到底是什么，为什么它不是普通显卡
 - 为什么普通家用平台大概率点不亮
@@ -79,7 +79,7 @@ This documentation is designed to answer:
 
 ### 中文
 
-本仓库已经尽量把信息整理成可读文档，但以下内容仍应优先以你手头的**完整官方驱动、镜像和相关资料**为准：
+本仓库已经尽量把信息整理成可读文档，但以下内容仍应优先以配套的**完整官方驱动、镜像和相关资料**为准：
 
 - 驱动安装命令
 - 节点管理命令
@@ -91,14 +91,14 @@ This documentation is designed to answer:
 原因不是来源不可靠，而是：
 
 - Intel 官网公开下载链路大多已经失效
-- 但你提供的网盘中保存了完整官方驱动、镜像和相关资料
+- 但配套资料库中保存了完整官方驱动、镜像和相关资料
 - 不同官方资料包内部的脚本、目录结构、工具版本仍可能存在差异
 
 ### English
 
-This repository is a **structured guide**, not a replacement for your full official package.
+This repository is a **structured guide**, not a replacement for the full official package.
 
-For the following items, always defer to the official driver and image package you already have:
+For the following items, always defer to the official driver and image package:
 
 - exact installation commands
 - node management commands
@@ -121,7 +121,7 @@ For the following items, always defer to the official driver and image package y
 - `479 files`
 - `91 subfolders`
 
-结合你的说明，这个资料库保存了完整官方驱动、镜像和相关资料；本仓库则负责把使用思路整理清楚。
+结合现有资料背景，这个资料库保存了完整官方驱动、镜像和相关资料；本仓库则负责把使用思路整理清楚。
 
 ### English
 
@@ -131,7 +131,7 @@ The linked Mega folder is understood as the **complete official driver, image, a
 
 ### 中文
 
-第一次接触 VCA2，建议按这个顺序看：
+首次接触 VCA2 时，可按以下顺序阅读：
 
 1. `快速开始`
 2. `VCA2 概览与硬件结构`
@@ -143,7 +143,7 @@ The linked Mega folder is understood as the **complete official driver, image, a
 
 ### English
 
-If you are new to Intel VCA2, start with:
+For readers who are new to Intel VCA2, start with:
 
 1. `English Quick Start`
 2. `English Documentation Guide`
@@ -153,8 +153,8 @@ If you are new to Intel VCA2, start with:
 
 ### 中文
 
-- 建议把 `docs/` 作为 GitHub 仓库主入口
-- 如果你后续公开更多资料，建议继续维持“整理文档”和“执行资料包”分层
+- `docs/` 适合作为 GitHub 仓库主入口
+- 如果后续继续公开更多资料，建议维持“整理文档”和“执行资料包”分层
 - 老系统与过期驱动具有明显安全风险，不要让未隔离的宿主机直接暴露在公网
 
 ### English

@@ -62,13 +62,13 @@ The full technical documentation set is currently written in Chinese, because th
 ## `07-文档说明与使用边界`
 
 - how to use this documentation correctly
-- why exact commands should still come from your official package
+- why exact commands should still come from the official package
 
 ## Important Note
 
-This repository is a structured guide. It does **not** replace the full official driver, image, and tooling package you already have.
+This repository is a structured guide. It does **not** replace the full official driver, image, and tooling package.
 
-You should always defer to your official package for:
+The official package should remain the primary source for:
 
 - exact installation commands
 - node-management commands
@@ -78,6 +78,6 @@ You should always defer to your official package for:
 
 ## Search Terms
 
-If you found this repository through search, the most relevant terms are:
+For search and discovery, the most relevant terms are:
 
 `Intel VCA2`, `Intel Visual Compute Accelerator 2`, `Intel VCA2 guide`, `Intel VCA2 documentation`, `Intel VCA2 deployment`, `Intel VCA2 BlockIO`, `Intel VCA2 RAMDisk`, `Intel VCA2 transcoding`, `Intel VCA2 Jellyfin`
