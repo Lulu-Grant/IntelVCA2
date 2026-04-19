@@ -87,3 +87,4 @@ For a more stable long-term setup:
 After this page, go to:
 
 - [English Documentation Guide](./README.en.md)
+- [Overview and Hardware Structure](./01-overview.en.md)

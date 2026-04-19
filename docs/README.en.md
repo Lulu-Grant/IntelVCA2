@@ -2,65 +2,64 @@
 
 This page is the English landing guide for the repository.
 
-The full technical documentation set is currently written in Chinese, because the original source materials and the hands-on deployment context are Chinese-first. To make the repository more accessible for English readers, this guide explains what each document covers and where to start.
+This repository now includes an English documentation path for readers who do not want to navigate Chinese pages first.
 
 ## Recommended Reading Order
 
 1. [English Quick Start](./QUICKSTART.en.md)
-2. [Chinese Documentation Guide](./00-文档导航.md)
-3. [Repository README package index](../README.md)
-4. [VCA2 Overview and Hardware Structure](./01-VCA2概览与硬件结构.md)
-5. [Compatibility and Preparation Checklist](./02-兼容性与准备清单.md)
-6. [Host Deployment Guide](./03-宿主机部署指南.md)
-7. [Node Images and Boot Modes](./04-Node镜像与启动模式.md)
-8. [Networking, SSH, and Service Deployment](./05-网络访问与服务部署.md)
-9. [Limits, Risks, and FAQ](./06-应用限制风险与FAQ.md)
-10. [Documentation Scope and Boundaries](./07-文档说明与使用边界.md)
+2. [Overview and Hardware Structure](./01-overview.en.md)
+3. [Compatibility and Preparation Checklist](./02-compatibility-and-checklist.en.md)
+4. [Host Deployment Guide](./03-host-deployment.en.md)
+5. [Node Images and Boot Modes](./04-node-images-and-boot-modes.en.md)
+6. [Networking, SSH, and Service Deployment](./05-networking-ssh-and-services.en.md)
+7. [Risks, Limitations, and FAQ](./06-risks-limitations-and-faq.en.md)
+8. [Documentation Scope and Boundaries](./07-scope-and-boundaries.en.md)
+9. [Repository README package index](../README.md)
 
 ## What Each Document Covers
 
-## `01-VCA2概览与硬件结构`
+## `01-overview.en.md`
 
 - what Intel VCA2 is
 - why it is not a normal GPU
 - why the three-node architecture matters
 
-## `02-兼容性与准备清单`
+## `02-compatibility-and-checklist.en.md`
 
 - platform and motherboard compatibility
 - cooling and power expectations
 - why consumer boards often fail
 - why VFIO / VM passthrough is usually not the right route
 
-## `03-宿主机部署指南`
+## `03-host-deployment.en.md`
 
 - the role of the host system
 - legacy OS expectations
 - hardware installation flow
 - driver and node-management workflow
 
-## `04-Node镜像与启动模式`
+## `04-node-images-and-boot-modes.en.md`
 
 - RAMDisk vs BlockIO
 - persistence tradeoffs
 - image planning
 - why BlockIO is generally preferred for long-term use
 
-## `05-网络访问与服务部署`
+## `05-networking-ssh-and-services.en.md`
 
 - internal PCIe-based networking model
 - SSH access to nodes
 - service deployment mindset
 - Jellyfin / media workload considerations
 
-## `06-应用限制风险与FAQ`
+## `06-risks-limitations-and-faq.en.md`
 
 - what Intel VCA2 is still good for
 - what it is not good for in modern usage
 - security and maintenance risks
 - common troubleshooting directions
 
-## `07-文档说明与使用边界`
+## `07-scope-and-boundaries.en.md`
 
 - how to use this documentation correctly
 - why exact commands should still come from the official package

@@ -50,6 +50,13 @@ It focuses on:
 
 - [English Documentation Guide](./docs/README.en.md)
 - [English Quick Start](./docs/QUICKSTART.en.md)
+- [English Overview and Hardware Structure](./docs/01-overview.en.md)
+- [English Compatibility and Preparation Checklist](./docs/02-compatibility-and-checklist.en.md)
+- [English Host Deployment Guide](./docs/03-host-deployment.en.md)
+- [English Node Images and Boot Modes](./docs/04-node-images-and-boot-modes.en.md)
+- [English Networking, SSH, and Service Deployment](./docs/05-networking-ssh-and-services.en.md)
+- [English Risks, Limitations, and FAQ](./docs/06-risks-limitations-and-faq.en.md)
+- [English Documentation Scope and Boundaries](./docs/07-scope-and-boundaries.en.md)
 
 ## What This Repository Covers
 
