@@ -1,21 +1,43 @@
-# Intel VCA2 资料整理与使用文档
+# Intel VCA2 Documentation | Intel Visual Compute Accelerator 2 Deployment Guide
 
-![Intel VCA2 外观图](./vca2显卡展示图片.png)
+![Intel VCA2 card / Intel VCA2 外观图](./vca2显卡展示图片.png)
 
-这个目录整理的是 **Intel VCA2（Intel Visual Compute Accelerator 2）** 的民间资料与重写后的公开文档。
+**中文简介**
 
-这里的公开入口不再依赖某一篇旧文章，而是基于现有 `.md`、`.txt`、`.webarchive` 等资料重新整理成一套结构化说明，方便后来者快速理解：
+这是一个围绕 **Intel VCA2 / Intel Visual Compute Accelerator 2** 的整理型文档仓库，重点覆盖：
 
-- 这张卡是什么
-- 需要什么平台才能点亮
-- 宿主机应该怎么准备
-- Node 镜像和启动模式怎么选
-- 节点如何联网、登录、部署服务
-- 这张卡真正适合做什么，不适合做什么
+- 硬件结构与定位
+- 平台兼容性与前置条件
+- Host 部署思路
+- Node 镜像与启动模式
+- 网络、SSH 与服务部署
+- 风险、限制与 FAQ
 
-## 从这里开始
+这个仓库对外只呈现整理后的使用文档，适合已经拿到完整官方驱动资料、想先把整体思路理清再动手的人。
+
+**English Summary**
+
+This repository provides **structured Intel VCA2 documentation** for users who want a clearer path before working with the full official driver and image package.
+
+It focuses on:
+
+- Intel VCA2 hardware overview
+- compatibility and platform requirements
+- host deployment workflow
+- node images, RAMDisk vs BlockIO
+- networking, SSH, and service deployment
+- limitations, risks, and troubleshooting
+
+## SEO Keywords
+
+`Intel VCA2`, `Intel Visual Compute Accelerator 2`, `Intel VCA2 documentation`, `Intel VCA2 guide`, `Intel VCA2 deployment`, `Intel VCA2 driver`, `Intel VCA2 image`, `Intel VCA2 BlockIO`, `Intel VCA2 RAMDisk`, `Intel VCA2 Jellyfin`, `Intel VCA2 transcoding`, `Intel VCA2 compatibility`
+
+## Start Here
+
+### 中文入口
 
 - [文档总览](./docs/00-文档导航.md)
+- [快速开始](./docs/08-快速开始.md)
 - [VCA2 概览与硬件结构](./docs/01-VCA2概览与硬件结构.md)
 - [兼容性、前置条件与准备清单](./docs/02-兼容性与准备清单.md)
 - [宿主机部署指南](./docs/03-宿主机部署指南.md)
@@ -23,63 +45,120 @@
 - [网络、SSH 与服务部署](./docs/05-网络访问与服务部署.md)
 - [应用场景、风险、排错与 FAQ](./docs/06-应用限制风险与FAQ.md)
 - [文档说明与使用边界](./docs/07-文档说明与使用边界.md)
-- [快速开始](./docs/08-快速开始.md)
 
-## 阅读建议
+### English Entry
 
-第一次接触 VCA2，建议按下面顺序看：
+- [English Documentation Guide](./docs/README.en.md)
+- [English Quick Start](./docs/QUICKSTART.en.md)
 
-1. `01-VCA2概览与硬件结构`
-2. `02-兼容性与准备清单`
-3. `03-宿主机部署指南`
-4. `04-Node镜像与启动模式`
-5. `05-网络访问与服务部署`
-6. `06-应用限制风险与FAQ`
+## What This Repository Covers
 
-## 这套文档的边界
+### 中文
 
-这批资料能确认很多关键事实，但**不能替代你手头驱动包自带的正式说明**。原因是：
+这套文档主要帮助你回答这些问题：
 
-- Intel 官网公开下载链路大多已经失效
-- 但你提供的网盘资料中保存了完整官方驱动、镜像和相关资料
-- 不同官方资料包内部的脚本、目录结构、工具版本仍可能存在差异
-- 某些精确命令、脚本路径、节点管理命令会随版本变化
+- VCA2 到底是什么，为什么它不是普通显卡
+- 为什么普通家用平台大概率点不亮
+- 为什么虚拟机直通通常不可行
+- 为什么 BlockIO 更适合长期保留节点环境
+- 节点怎么联网、怎么 SSH、怎么部署媒体服务
+- 它到底适合做什么，不适合做什么
 
-因此本仓库文档的定位是：
+### English
 
-- 帮你理解整体架构与部署思路
-- 帮你避坑
-- 帮你知道该准备什么、先做什么、遇到什么问题该怀疑哪里
+This documentation is designed to answer:
 
-但涉及以下内容时，仍应优先以你手里的驱动包与镜像说明为准：
+- What Intel VCA2 actually is
+- Why it behaves more like a multi-node server card than a normal GPU
+- Why consumer platforms often fail to initialize it properly
+- Why VFIO / VM passthrough is usually not the right path
+- Why BlockIO is generally the better long-term boot mode
+- How nodes are accessed, networked, and used for services such as media workloads
+
+## Scope and Boundaries
+
+### 中文
+
+本仓库已经尽量把信息整理成可读文档，但以下内容仍应优先以你手头的**完整官方驱动、镜像和相关资料**为准：
 
 - 驱动安装命令
 - 节点管理命令
 - 镜像挂载命令
 - 默认账号与初始密码
-- 管理工具路径与服务名
+- 工具目录、脚本路径、服务名
+- 版本对应关系
 
-## 附件来源
+原因不是来源不可靠，而是：
 
-资料补充来源：
+- Intel 官网公开下载链路大多已经失效
+- 但你提供的网盘中保存了完整官方驱动、镜像和相关资料
+- 不同官方资料包内部的脚本、目录结构、工具版本仍可能存在差异
+
+### English
+
+This repository is a **structured guide**, not a replacement for your full official package.
+
+For the following items, always defer to the official driver and image package you already have:
+
+- exact installation commands
+- node management commands
+- image mounting commands
+- default credentials
+- script paths, tool directories, and service names
+- version-specific mappings
+
+## Official Materials Package
+
+### 中文
+
+补充资料来源：
 
 - <https://mega.nz/folder/6Y9lxYzK#NIYh72gVUlZHoSayG2ebWw>
 
-当前只能确认公开页元信息显示为：
+目前公开页可确认的信息：
 
 - `17.09 GB`
 - `479 files`
 - `91 subfolders`
 
-结合你的说明，这个 Mega 更应理解为保存了完整官方驱动、镜像和相关资料的资料库，而本仓库对外只呈现整理后的文档内容。
+结合你的说明，这个资料库保存了完整官方驱动、镜像和相关资料；本仓库则负责把使用思路整理清楚。
 
-## 公开前提醒
+### English
 
-- 如果你将本目录发布到 GitHub，建议把 `docs/` 作为主入口。
-- 如果某些 `.webarchive`、镜像、驱动文件并非你原创，建议在仓库中单独写明来源与版权归属。
-- 老系统与过期驱动存在明显安全风险，不要把未经隔离的宿主机直接暴露到公网。
+The linked Mega folder is understood as the **complete official driver, image, and related materials package**, while this repository serves as the structured public-facing documentation layer.
 
-## 继续阅读
+## Suggested Reading Order
 
-- [快速开始](./docs/08-快速开始.md)
-- [文档说明与使用边界](./docs/07-文档说明与使用边界.md)
+### 中文
+
+第一次接触 VCA2，建议按这个顺序看：
+
+1. `快速开始`
+2. `VCA2 概览与硬件结构`
+3. `兼容性、前置条件与准备清单`
+4. `宿主机部署指南`
+5. `Node 镜像、启动模式与持久化`
+6. `网络、SSH 与服务部署`
+7. `应用场景、风险、排错与 FAQ`
+
+### English
+
+If you are new to Intel VCA2, start with:
+
+1. `English Quick Start`
+2. `English Documentation Guide`
+3. then use the Chinese detailed docs as the primary technical set
+
+## Publishing Note
+
+### 中文
+
+- 建议把 `docs/` 作为 GitHub 仓库主入口
+- 如果你后续公开更多资料，建议继续维持“整理文档”和“执行资料包”分层
+- 老系统与过期驱动具有明显安全风险，不要让未隔离的宿主机直接暴露在公网
+
+### English
+
+- Use `docs/` as the main documentation surface for GitHub visitors
+- Keep public documentation separate from package-specific execution details
+- Do not expose an unisolated legacy host system directly to the public internet
