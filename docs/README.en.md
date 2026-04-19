@@ -8,13 +8,14 @@ The full technical documentation set is currently written in Chinese, because th
 
 1. [English Quick Start](./QUICKSTART.en.md)
 2. [Chinese Documentation Guide](./00-文档导航.md)
-3. [VCA2 Overview and Hardware Structure](./01-VCA2概览与硬件结构.md)
-4. [Compatibility and Preparation Checklist](./02-兼容性与准备清单.md)
-5. [Host Deployment Guide](./03-宿主机部署指南.md)
-6. [Node Images and Boot Modes](./04-Node镜像与启动模式.md)
-7. [Networking, SSH, and Service Deployment](./05-网络访问与服务部署.md)
-8. [Limits, Risks, and FAQ](./06-应用限制风险与FAQ.md)
-9. [Documentation Scope and Boundaries](./07-文档说明与使用边界.md)
+3. [Official Driver and Dependency Index](./DRIVER-INDEX.en.md)
+4. [VCA2 Overview and Hardware Structure](./01-VCA2概览与硬件结构.md)
+5. [Compatibility and Preparation Checklist](./02-兼容性与准备清单.md)
+6. [Host Deployment Guide](./03-宿主机部署指南.md)
+7. [Node Images and Boot Modes](./04-Node镜像与启动模式.md)
+8. [Networking, SSH, and Service Deployment](./05-网络访问与服务部署.md)
+9. [Limits, Risks, and FAQ](./06-应用限制风险与FAQ.md)
+10. [Documentation Scope and Boundaries](./07-文档说明与使用边界.md)
 
 ## What Each Document Covers
 
@@ -63,6 +64,12 @@ The full technical documentation set is currently written in Chinese, because th
 
 - how to use this documentation correctly
 - why exact commands should still come from the official package
+
+## `DRIVER-INDEX.en.md`
+
+- which files in the official Mega package matter most
+- how host packages, images, and dependencies are separated
+- where to find quick links and representative filenames
 
 ## Important Note
 

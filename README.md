@@ -38,6 +38,7 @@ It focuses on:
 
 - [文档总览](./docs/00-文档导航.md)
 - [快速开始](./docs/08-快速开始.md)
+- [官方驱动与依赖文件索引](./docs/09-官方驱动与依赖文件索引.md)
 - [VCA2 概览与硬件结构](./docs/01-VCA2概览与硬件结构.md)
 - [兼容性、前置条件与准备清单](./docs/02-兼容性与准备清单.md)
 - [宿主机部署指南](./docs/03-宿主机部署指南.md)
@@ -50,6 +51,7 @@ It focuses on:
 
 - [English Documentation Guide](./docs/README.en.md)
 - [English Quick Start](./docs/QUICKSTART.en.md)
+- [Official Driver and Dependency Index](./docs/DRIVER-INDEX.en.md)
 
 ## What This Repository Covers
 
@@ -123,9 +125,17 @@ For the following items, always defer to the official driver and image package:
 
 结合现有资料背景，这个资料库保存了完整官方驱动、镜像和相关资料；本仓库则负责把使用思路整理清楚。
 
+重点文件、目录型驱动包、代表性文件名和快捷下载链接见：
+
+- [官方驱动与依赖文件索引](./docs/09-官方驱动与依赖文件索引.md)
+
 ### English
 
 The linked Mega folder is understood as the **complete official driver, image, and related materials package**, while this repository serves as the structured public-facing documentation layer.
+
+For highlighted packages, representative filenames, and quick links, see:
+
+- [Official Driver and Dependency Index](./docs/DRIVER-INDEX.en.md)
 
 ## Suggested Reading Order
 
